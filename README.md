@@ -13,7 +13,7 @@
 
 ---
 
-## Installation and Running Locally
+## Installation
 
 Follow these steps to configure and run the backend locally:
 
@@ -23,6 +23,8 @@ Follow these steps to configure and run the backend locally:
 git clone https://github.com/germanrogu/api-tbx.git
 cd api-tbx
 ```
+
+## **Running Locally**
 
 ### 2. **Install the Dependencies**
 
@@ -51,6 +53,26 @@ npm run test
 ```
 
 ---
+
+## **Run with Docker**
+
+### **1. Build the Image**
+
+First, make sure you are in the root directory of the backend (where the `Dockerfile` is located) and run the following command to build the Docker image:
+
+```bash
+docker build -t my-backend .
+```
+
+### **2. Run the container**
+
+Once the image is built, run the container with the following command::
+
+```bash
+docker run -p 4000:4000 my-backend
+```
+
+This will make the backend available at `http://localhost:4000`.
 
 ## Technologies Used
 
